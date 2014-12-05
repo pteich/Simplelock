@@ -3,9 +3,9 @@ Simplelock
 
 ## Overview
 
-A simple locking/semaphore library for PHP 5.3+ with different adapters. Helps to prevent flooding or multiple execution of time consumptive code that could break your application.
+A simple locking/semaphore library for PHP 5.3+ with different adapters. Helps to keep code thread safe and prevent flooding or multiple execution of time consumptive code that could otherwise break your application.
 
-Locks can be autoreleased on script termination.
+You can set locks for a specific time duration. Locks can also be autoreleased on script termination. This assures that a task can only executed once at a time.
 
 ## Installation
 
