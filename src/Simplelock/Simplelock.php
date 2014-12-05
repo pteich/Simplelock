@@ -53,10 +53,11 @@ class Simplelock {
 
     public function __destruct()
     {
+        // unlock all used keys
         if ($this->autounlock) {
             foreach($this->keys as $key=>$value) {
                 if ($value) {
-                    $this->adapter->unlock($this->key);
+                    $this->adapter->unlock($key);
                 }
             }
         }
