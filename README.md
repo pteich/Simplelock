@@ -14,7 +14,7 @@ Locks can be autoreleased on script termination.
 Just add `pteich/simplelock` to your composer.json require:
 
 ```
-"desarrolla2/cache":  "dev-master"
+"pteich/simplelock":  "dev-master"
 ```
 
 ### Without Composer
